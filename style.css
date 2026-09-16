@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sg-logo {
+    color: #109CEB;
+}
+
+p {
+    word-break: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+b {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*
+
+LANDING PAGE
+
+*/
+
+#landing-page {
+    min-height: 25vh;
+    background-color: #109CEB;
+}
+
+/*
+
+NAVIGATION
+
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sg-logo__wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sg-logo__crop--container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#sg-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav__link--list {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    gap: 20px;
+}
+
+.nav__link--anchor {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #E7F5FD;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 350px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #91D2F7;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #E7F5FD;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-container button:hover {
+    background-color: #0B6599;
+}
+
+/*
+
+FILMS
+
+*/  
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.film-list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.film {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.film-card {
+    background-color: #E7F5FD;
+    box-shadow: 0 4px 8px 0 #91D2F7;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 4px;
+    max-width: 500px;
+}
+
+.film-card__container {
+    padding: 4px 16px;
+}
