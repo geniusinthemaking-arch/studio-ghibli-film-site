@@ -11,6 +11,7 @@ main();
 
 function filmsHTML(film) {
     return `<div class="film-card">
+        <img src="${film.image}" alt="${film.movie_banner}">
         <div class="film-card__container">
             <h3>${film.title}</h3>
             <p><b>Original Title:</b> ${film.original_title}</p>
