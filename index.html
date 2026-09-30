@@ -31,12 +31,25 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sort__function"></div>
+                <select id="filter" onchange="applyFilter()">
+                    <option value="default" disabled selected>Sort</option>
+                    <option value="aToZ">A - Z</option>
+                    <option value="zToA">Z - A</option>
+                    <option value="newest">Oldest to Newest</option>
+                    <option value="oldest">Newest to Oldest</option>
+                </select>
+                <div class="films__loading">
+                        <i class="fas fa-spinner films__loading--spinner"></i>
+                </div>
             </nav>
         </div>
+        <!-- <div>
+            <label for="search">Search:</label>
+            <input type="text" id="search" oninput="applySearch()" placeholder="Search FIlms...">
+        </div> -->
     </section>
 
-    <section id="films">
+    <section class="films">
         <div class="container">
             <div class="row">
                 <div class="film-list">
@@ -46,7 +59,6 @@
                                 <img class="film__img" src="URL_TO_IMAGE" alt="movie banner">
                                 <h3>Film Title</h3>
                                 <p><b>Original Title:</b> hey</p>
-                                <p><b>Description:</b> about here</p>
                                 <p><b>Release Year:</b> 0000</p>
                             </div>
                         </div>
