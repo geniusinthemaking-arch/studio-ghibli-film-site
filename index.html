@@ -31,41 +31,51 @@
                         </li>
                     </ul>
                 </div>
-                <select id="filter" onchange="applyFilter()">
-                    <option value="default" disabled selected>Sort</option>
-                    <option value="aToZ">A - Z</option>
-                    <option value="zToA">Z - A</option>
-                    <option value="newest">Oldest to Newest</option>
-                    <option value="oldest">Newest to Oldest</option>
-                </select>
-                <div class="films__loading">
-                        <i class="fas fa-spinner films__loading--spinner"></i>
-                </div>
             </nav>
+            <form action="search.php">
+                <input type="search" placeholder="Search..." name="q">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
-        <!-- <div>
-            <label for="search">Search:</label>
-            <input type="text" id="search" oninput="applySearch()" placeholder="Search FIlms...">
-        </div> -->
     </section>
 
-    <section class="films">
-        <div class="container">
-            <div class="row">
-                <div class="film-list">
-                    <div class="film">
-                        <div class="film-card">
-                            <div class="film-card__container">
-                                <img class="film__img" src="URL_TO_IMAGE" alt="movie banner">
-                                <h3>Film Title</h3>
-                                <p><b>Original Title:</b> hey</p>
-                                <p><b>Release Year:</b> 0000</p>
+    <main>
+        <section class="films">
+            <select id="filter" onchange="applyFilter()">
+                <option value="default" disabled selected>Sort</option>
+                <option value="aToZ">A - Z</option>
+                <option value="zToA">Z - A</option>
+                <option value="newest">Oldest to Newest</option>
+                <option value="oldest">Newest to Oldest</option>
+            </select>
+            <div class="films__loading">
+                <i class="fas fa-spinner films__loading--spinner"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="film-list">
+                        <div class="film">
+                            <div class="film-card">
+                                <div class="film-card__container">
+                                    <img class="film__img" src="URL_TO_IMAGE" alt="movie banner">
+                                    <h3>Film Title</h3>
+                                    <p><b>Original Title:</b> hey</p>
+                                    <p><b>Release Year:</b> 0000</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="sg-logo__wrapper">
+            <figure class="sg-logo__crop--container footer__img">
+                <img id="sg-logo" src="sgfs-assets/Studio_Ghibli_logo.svg.webp">
+            </figure>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

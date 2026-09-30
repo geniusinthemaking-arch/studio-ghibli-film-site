@@ -130,7 +130,6 @@ FILMS
 
 .film {
     width: 50%;
-    box-sizing: border-box;
 }
 
 .film-card {
@@ -139,7 +138,7 @@ FILMS
     margin: 10px;
     transition: 0.3s;
     cursor: default;
-    border-radius: 4px;
+    border-radius: 32px;
     max-width: 300px;
     overflow: hidden;
 }
@@ -155,4 +154,61 @@ FILMS
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+/*
+
+SEARCH & FILTER
+
+*/
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+input[type="search"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #109CEB;
+    outline: none;
+    border-radius: 32px;
+    width: 32%;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #E7F5FD;
+    color: #109CEB;
+    cursor: pointer;
+    border: 1px solid #109CEB;
+    font-size: 16px;
+    border-radius: 32px;
+    margin-left: 4px;
+}
+
+button:hover {
+    background-color: #91D2F7;
+}
+
+#filter {
+    padding: 8px 8px;
+    border-radius: 32px;
+    width: 200px;
+    margin-top: 16px !important;
+    display: flex;
+    margin: auto;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer__img {
+    background-color: #109CEB;
+    margin-top: 16px;
 }
