@@ -32,7 +32,7 @@
                     </ul>
                 </div>
             </nav>
-            <form onsumbit="event.preventDefault()">
+            <form onsubmit="event.preventDefault()">
                 <input type="search" id="search" placeholder="Search..." oninput="searchFilms(event)">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -79,13 +79,15 @@
                             <img id="sg-logo" src="sgfs-assets/Studio_Ghibli_logo.svg.webp">
                         </figure>
                     </a>
-                    <div class="footer__list">
-                        <a href="#" class="footer__link">Home</a>
-                        <a href="#" class="footer__link">Find Film</a>
-                        <a href="#" class="footer__link no-cursor">Contact</a>
-                    </div>
-                    <div class="footer__copyright">
-                        Copyright &copy; 2026 Film Finder
+                    <div>
+                        <div class="footer__list">
+                            <a href="#" class="footer__link">Home</a>
+                            <a href="#" class="footer__link">Find Film</a>
+                            <a href="#" class="footer__link no-cursor">Contact</a>
+                        </div>
+                        <div class="footer__copyright">
+                            Copyright &copy; 2026 Film Finder
+                        </div>
                     </div>
                 </div>
             </div>

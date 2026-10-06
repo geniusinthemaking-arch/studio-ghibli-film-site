@@ -6,6 +6,7 @@ async function main () {
     try {
         const filmShows = await fetch("https://ghibliapi.vercel.app/films");
         const filmsData = await filmShows.json();
+        allFIlms = filmsData
         displayFilms(filmsData);
     }
     catch (error) {

@@ -211,10 +211,10 @@ button:hover {
 }
 
 .films__loading {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    /* padding-top: 60px; */
+    padding-top: 60px;
     font-size: 60px;
     color: #109CEB;
 }
