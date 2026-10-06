@@ -219,14 +219,6 @@ button:hover {
     color: #109CEB;
 }
 
-.films__loading--spinner {
-    display: none !important;
-}
-
-.films__loading, .films__loading--spinner {
-    /* display: block !important; */
-}
-
 .fa-spinner {
     animation: rotate 600ms infinite linear;
 }

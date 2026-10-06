@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Ghibli Film Site</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/9626a8b080.js"
       crossorigin="anonymous">
@@ -32,8 +32,8 @@
                     </ul>
                 </div>
             </nav>
-            <form action="search.php">
-                <input type="search" placeholder="Search..." name="q">
+            <form onsumbit="event.preventDefault()">
+                <input type="search" id="search" placeholder="Search..." oninput="searchFilms(event)">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
