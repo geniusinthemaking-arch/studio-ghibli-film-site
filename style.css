@@ -265,3 +265,40 @@ footer {
 .footer__link {
     padding: 0 8px;
 }
+
+.footer__links--container {
+    padding: 20px;
+    padding-top: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+
+SMALL PHONES, TABLETS, LARGE PHONES
+
+*/
+
+@media (max-width: 768px) {
+    input[type="search"] {
+        width: 50%
+    }
+    #filter {
+        width: 300px;
+    }
+}
+
+/*
+
+SMALL PHONES, LARGE PHONES
+
+*/
+
+@media (max-width: 550px) {
+    input[type="search"] {
+        width: 75%
+    }
+    #filter {
+        width: 400px;
+    }
+}
