@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Ghibli Film Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Studio Ghibli Home Site</title>
+    <link rel="stylesheet" href="home.css">
     <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/9626a8b080.js"
@@ -12,63 +12,48 @@
     </script>
 </head>
 <body>
-    <section id="landing-page">
-        <div class="nav__container"></div>
-            <nav>
-                <div class="sg-logo__wrapper">
-                    <figure class="sg-logo__crop--container">
-                        <img id="sg-logo" src="sgfs-assets/Studio_Ghibli_logo.svg.webp">
-                    </figure>
-                    <ul class="nav__link--list">
-                        <li class="nav__link">
-                            <a href="#" class="nav__link--anchor">Home</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="#" class="nav__link--anchor">Find Film</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="#" class="nav__link--anchor">Contact</a>
-                        </li>
-                    </ul>
+    <header class="navbar">
+        <nav class="nav__container">
+            <div class="sg-logo__wrapper">
+                <figure class="sg-logo__crop--container">
+                    <img id="sg-logo" src="sgfs-assets/Studio_Ghibli_logo.svg.webp">
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="index.html" class="nav__link--anchor">Home</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="films.html" class="nav__link--anchor">Find Film</a>
+                    </li>
+                    <li class="nav__link">
+                        <a class=" btn-contact nav__link--anchor">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="landing__page">
+        <div class="content__wrapper">
+            <div class="content__box">
+                <div>
+                    <h1>Best site to find Studio Ghibli films</h1>
                 </div>
-            </nav>
-            <form onsubmit="event.preventDefault()">
-                <input type="search" id="search" placeholder="Search..." oninput="searchFilms(event)">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+                <div>
+                    <h2>Find your next Ghibli watch!</h2>
+                </div>
+                <form onsubmit="event.preventDefault()">
+                    <input type="search" id="search" placeholder="Search..." oninput="searchFilms(event)">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="sg-img__wrapper">
+                <figure class="sg-img__crop--container">
+                    <img src="sgfs-assets/9566a20f5d2b1763312495bad233adb8.jpg" class="sg-img">
+                </figure>
+            </div>
         </div>
     </section>
-
-    <main>
-        <section class="films">
-            <select id="filter" onchange="applyFilter()">
-                <option value="default" disabled selected>Sort</option>
-                <option value="aToZ">A - Z</option>
-                <option value="zToA">Z - A</option>
-                <option value="newest">Oldest to Newest</option>
-                <option value="oldest">Newest to Oldest</option>
-            </select>
-            <div class="films__loading">
-                <i class="fas fa-spinner films__loading--spinner"></i>
-            </div>
-            <div class="container">
-                <div class="film__row">
-                    <div class="film-list">
-                        <div class="film">
-                            <div class="film-card">
-                                <div class="film-card__container">
-                                    <img class="film__img" src="URL_TO_IMAGE" alt="movie banner">
-                                    <h3>Film Title</h3>
-                                    <p><b>Original Title:</b> hey</p>
-                                    <p><b>Release Year:</b> 0000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
     <footer>
         <div class="footer__container">
@@ -80,11 +65,6 @@
                         </figure>
                     </a>
                     <div class="footer__links--container">
-                        <div class="footer__list">
-                            <a href="#" class="footer__link">Home</a>
-                            <a href="#" class="footer__link">Find Film</a>
-                            <a href="#" class="footer__link no-cursor">Contact</a>
-                        </div>
                         <div class="footer__copyright">
                             Copyright &copy; 2026 Film Finder
                         </div>

@@ -19,19 +19,26 @@ li {
     list-style-type: none;
 }
 
+h1, h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #109CEB;
+    text-align: center;
+}
+
+h1 {
+    padding: 16px;
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 32px;
+    padding: 16px;
+}
+
 .sg-logo {
     color: #109CEB;
-}
-
-p {
-    word-break: break-word;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-h3 {
-    font-size: 28px;
-    text-align: center;
 }
 
 b {
@@ -50,11 +57,11 @@ a:hover {
 
 /*
 
-NAVIGATION
+NAVBAR
 
 */
 
-#navbar {
+.navbar {
     min-height: 25vh;
     background-color: #109CEB;
 }
@@ -111,56 +118,7 @@ nav {
 
 /*
 
-FILMS
-
-*/  
-
-.container {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-}
-
-.film-list {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.film {
-    width: 50%;
-}
-
-.film-card {
-    background-color: #E7F5FD;
-    box-shadow: 0 4px 8px 0 #91D2F7;
-    margin: 10px;
-    transition: 0.3s;
-    cursor: default;
-    border-radius: 32px;
-    max-width: 300px;
-    overflow: hidden;
-}
-
-.film-card__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4px 16px;
-}
-
-.film-card img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/*
-
-SEARCH & FILTER
+SEARCH
 
 */
 
@@ -195,36 +153,23 @@ button:hover {
     background-color: #91D2F7;
 }
 
-#filter {
-    padding: 8px 8px;
-    border-radius: 32px;
-    width: 200px;
-    margin-top: 16px !important;
-    display: flex;
-    margin: auto;
+
+/*
+
+LANDING PAGE
+
+*/
+
+.sg-img__wrapper {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
 }
 
-.films__loading {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-    font-size: 60px;
-    color: #109CEB;
-}
-
-.fa-spinner {
-    animation: rotate 600ms infinite linear;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+.sg-img__crop--container, .sg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /*
@@ -275,6 +220,12 @@ SMALL PHONES, TABLETS, LARGE PHONES
     #filter {
         width: 300px;
     }
+    h1 {
+        text-align: center;
+    }
+    .sg-img__wrapper {
+        max-height: 600px;
+    }
 }
 
 /*
@@ -289,5 +240,8 @@ SMALL PHONES, LARGE PHONES
     }
     #filter {
         width: 400px;
+    }
+    .sg-img__wrapper {
+        max-height: 400px;
     }
 }
