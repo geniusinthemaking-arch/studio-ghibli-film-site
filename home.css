@@ -23,7 +23,7 @@ h1, h2 {
     align-items: center;
     display: flex;
     justify-content: center;
-    color: #109CEB;
+    color: #08486E;
     text-align: center;
 }
 
@@ -35,10 +35,6 @@ h1 {
 h2 {
     font-size: 32px;
     padding: 16px;
-}
-
-.sg-logo {
-    color: #109CEB;
 }
 
 b {
@@ -118,47 +114,34 @@ nav {
 
 /*
 
-SEARCH
-
-*/
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 12px;
-}
-
-input[type="search"] {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #109CEB;
-    outline: none;
-    border-radius: 32px;
-    width: 32%;
-}
-
-button {
-    padding: 8px 16px;
-    background-color: #E7F5FD;
-    color: #109CEB;
-    cursor: pointer;
-    border: 1px solid #109CEB;
-    font-size: 16px;
-    border-radius: 32px;
-    margin-left: 4px;
-}
-
-button:hover {
-    background-color: #91D2F7;
-}
-
-
-/*
-
 LANDING PAGE
 
 */
+
+.film__link--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.film__link {
+    color: #08486E;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #109CEB;
+    border-radius: 32px;
+    padding: 8px 16px;
+    text-align: center;
+    width: 16%;
+}
+
+.film__link:hover {
+    background-color: #109CEB;
+    text-decoration: none;
+    color: #E7F5FD;
+    transform: transition 300ms ease;
+}
 
 .sg-img__wrapper {
     width: 100%;
@@ -192,7 +175,7 @@ footer {
 }
 
 .footer__copyright {
-    color: #E7F5FD;
+    color: #08486E;
     font-size: 16px;
 }
 
@@ -213,6 +196,12 @@ SMALL PHONES, TABLETS, LARGE PHONES
 
 */
 
+@media (max-width: 838px) {
+    .film__link {
+        width: 32%;
+    }
+}
+
 @media (max-width: 768px) {
     input[type="search"] {
         width: 50%
@@ -225,6 +214,9 @@ SMALL PHONES, TABLETS, LARGE PHONES
     }
     .sg-img__wrapper {
         max-height: 600px;
+    }
+    .film__link {
+        width: 32%;
     }
 }
 
@@ -243,5 +235,8 @@ SMALL PHONES, LARGE PHONES
     }
     .sg-img__wrapper {
         max-height: 400px;
+    }
+    .film__link {
+        width: 50%;
     }
 }

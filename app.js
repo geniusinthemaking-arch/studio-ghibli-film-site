@@ -28,6 +28,13 @@ function searchFilms(event) {
     film.title.toLowerCase().includes(searchTerm)
     );
     displayFilms(searchedFilms);
+
+    const returnContainer = document.querySelector(".return__container");
+    if (searchedFilms.length === 0 && searchTerm.trim() !== "") {
+        returnContainer.style.display = "block";
+    } else {
+        returnContainer.style.display = "none";
+    }
 }
 
 function filmsHTML(film) {
